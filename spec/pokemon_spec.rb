@@ -59,8 +59,8 @@ describe "Pokemon" do
     end
 
     # So Ian and you have decided to battle.  He chose Magikarp (rookie mistake), and you chose Pikachu.
-    # He used splash. It wasn't very effective. It did one damage.
-    it_hp(59, @db)
+    # He used splash. It wasn't very effective. It did one damageit "alters Pikachu's hp to 59" do
+      pikachu.alter_hp(59, @db)
       expect(Pokemon.find(1, @db).hp).to eq(59)
     end
 
