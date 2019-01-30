@@ -8,4 +8,6 @@ class Pokemon
     @hp = hp 
     @db = db
   end
+  
+  def 
 end
